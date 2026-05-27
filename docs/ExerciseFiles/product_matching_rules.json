@@ -1,0 +1,39 @@
+{
+  "valid_input_rules": {
+    "submission_id": "Required non empty string. Must be unique within a submission file.",
+    "name": "Required non empty string.",
+    "producer": "Required non empty string.",
+    "category": "Required. Suggested values are Wine, Whisky, Bourbon, Tequila, Rum, Cognac. Other values are allowed but will not match the catalog.",
+    "vintage": "Integer between 1800 and the current year, or null.",
+    "size_ml": "Allowed values are 50, 100, 200, 375, 500, 700, 750, 1000, 1500, 3000, 6000."
+  },
+  "decision_classes": {
+    "exact_match": "High confidence the submission refers to exactly one catalog product. Use when normalized name and producer match (with or without an alias table) AND all key attributes (category, size_ml, and vintage when required) are consistent.",
+    "possible_match": "A single best candidate has been identified but confidence is below the exact threshold. Typically used when the name requires aliasing, abbreviation expansion, or fuzzy reasoning beyond exact normalization.",
+    "no_match": "No catalog candidate meets the minimum confidence. Also use when key attributes definitively disqualify all candidates (see attribute_policies below).",
+    "human_review": "A candidate exists but the false positive risk is meaningful. Use when multiple plausible candidates remain, when a required attribute is missing, or when producer disagrees with all candidates in a way the system cannot resolve."
+  },
+  "attribute_policies": {
+    "size_ml_is_a_discriminator": "Two products with different size_ml values are different SKUs. A size mismatch with the only candidate must produce no_match, not possible_match. The catalog may contain the same canonical_name in multiple sizes as separate products.",
+    "vintage_when_required": "For catalog products with vintage_required=true, a submission with a missing or null vintage cannot exact_match. Route to human_review if a single product line is otherwise identified, or no_match if no line is identified. Vintage itself is a per-bottle attribute and does not create a new catalog row.",
+    "category_mismatch": "If the submission category does not appear in the catalog (e.g. Beer), the result is no_match regardless of name similarity.",
+    "producer_alias": "Producer strings may differ from catalog values in legitimate ways (e.g. 'Macallan' vs 'The Macallan', 'Suntory' vs 'Suntory Hibiki', 'Old Rip Van Winkle' vs 'Old Rip Van Winkle Distillery'). Resolving these aliases is part of the exercise. Document your approach."
+  },
+  "duplicate_policy": {
+    "exact_duplicate": "Two submissions are exact duplicates if all input fields (after trimming whitespace) are identical. Keep one and flag the rest.",
+    "near_duplicate": "Two submissions are near duplicates if they would resolve to the same catalog product with high confidence. Surface these but do not silently collapse them; the candidate should decide and justify."
+  },
+  "constraints": {
+    "catalog_size_assumption": "5 million records in production. The 25 catalog entries provided are a sample for the exercise.",
+    "submission_volume_assumption": "Hundreds of thousands to millions of submissions per import in production.",
+    "false_positive_policy": "False positives are worse than false negatives. When in doubt, prefer human_review over possible_match, and possible_match over exact_match.",
+    "llm_budget_assumption": "Assume a $50 LLM budget per 1 million submissions when reasoning about cost.",
+    "expected_output_fields": [
+      "submission_id",
+      "decision",
+      "confidence",
+      "candidate_product_ids",
+      "explanation"
+    ]
+  }
+}

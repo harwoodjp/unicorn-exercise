@@ -1,0 +1,27 @@
+
+Eval results (import_id=4f854dec-8104-43c3-998f-215ab9b937cb, n=32):
+
+Overall:
+  product_id correct:     32/32 = 100.0%
+  decision in acceptable: 32/32 = 100.0%
+  false positives:        0
+
+Emitted decisions:
+  exact_match        14
+  possible_match     7
+  no_match           5
+  invalid (status)   4
+  human_review       2
+
+Resolved by:
+  tier 1 (deterministic): 22
+  tier 2 (LLM):           10  (conf mean=0.92, range [0.70, 1.00])
+
+Accuracy by acceptable-decision set:
+  {exact_match, possible_match}   6/6 (100.0%)
+  {exact_match}                   11/11 (100.0%)
+  {human_review, possible_match}  2/2 (100.0%)
+  {human_review}                  1/1 (100.0%)
+  {invalid}                       4/4 (100.0%)
+  {no_match}                      5/5 (100.0%)
+  {possible_match}                3/3 (100.0%)

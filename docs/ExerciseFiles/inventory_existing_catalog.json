@@ -1,0 +1,202 @@
+[
+  {
+    "product_id": "PROD-0001",
+    "canonical_name": "The Macallan 18 Year Old Sherry Oak Single Malt Scotch Whisky",
+    "producer": "The Macallan",
+    "category": "Whisky",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0002",
+    "canonical_name": "The Macallan 12 Year Old Double Cask Single Malt Scotch Whisky",
+    "producer": "The Macallan",
+    "category": "Whisky",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0003",
+    "canonical_name": "Lagavulin 16 Year Old Single Malt Scotch Whisky",
+    "producer": "Lagavulin",
+    "category": "Whisky",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0004",
+    "canonical_name": "Lagavulin 16 Year Old Single Malt Scotch Whisky",
+    "producer": "Lagavulin",
+    "category": "Whisky",
+    "size_ml": 1000,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0005",
+    "canonical_name": "Glenfiddich 18 Year Old Single Malt Scotch Whisky",
+    "producer": "Glenfiddich",
+    "category": "Whisky",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0006",
+    "canonical_name": "Yamazaki 12 Year Old Single Malt Japanese Whisky",
+    "producer": "Suntory",
+    "category": "Whisky",
+    "size_ml": 700,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0007",
+    "canonical_name": "Hibiki Japanese Harmony",
+    "producer": "Suntory",
+    "category": "Whisky",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0008",
+    "canonical_name": "Pappy Van Winkle 15 Year Family Reserve Bourbon",
+    "producer": "Old Rip Van Winkle",
+    "category": "Bourbon",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0009",
+    "canonical_name": "Pappy Van Winkle 20 Year Family Reserve Bourbon",
+    "producer": "Old Rip Van Winkle",
+    "category": "Bourbon",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0010",
+    "canonical_name": "Pappy Van Winkle 23 Year Family Reserve Bourbon",
+    "producer": "Old Rip Van Winkle",
+    "category": "Bourbon",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0011",
+    "canonical_name": "Buffalo Trace Kentucky Straight Bourbon",
+    "producer": "Buffalo Trace",
+    "category": "Bourbon",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0012",
+    "canonical_name": "Eagle Rare 10 Year Kentucky Straight Bourbon",
+    "producer": "Buffalo Trace",
+    "category": "Bourbon",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0013",
+    "canonical_name": "W.L. Weller 12 Year Wheated Bourbon",
+    "producer": "Buffalo Trace",
+    "category": "Bourbon",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0014",
+    "canonical_name": "Chateau Margaux",
+    "producer": "Chateau Margaux",
+    "category": "Wine",
+    "size_ml": 750,
+    "vintage_required": true
+  },
+  {
+    "product_id": "PROD-0015",
+    "canonical_name": "Chateau Latour",
+    "producer": "Chateau Latour",
+    "category": "Wine",
+    "size_ml": 750,
+    "vintage_required": true
+  },
+  {
+    "product_id": "PROD-0016",
+    "canonical_name": "Chateau Lafite Rothschild",
+    "producer": "Chateau Lafite Rothschild",
+    "category": "Wine",
+    "size_ml": 750,
+    "vintage_required": true
+  },
+  {
+    "product_id": "PROD-0017",
+    "canonical_name": "Opus One",
+    "producer": "Opus One Winery",
+    "category": "Wine",
+    "size_ml": 750,
+    "vintage_required": true
+  },
+  {
+    "product_id": "PROD-0018",
+    "canonical_name": "Domaine de la Romanee-Conti La Tache Grand Cru",
+    "producer": "Domaine de la Romanee-Conti",
+    "category": "Wine",
+    "size_ml": 750,
+    "vintage_required": true
+  },
+  {
+    "product_id": "PROD-0019",
+    "canonical_name": "Clase Azul Reposado Tequila",
+    "producer": "Clase Azul",
+    "category": "Tequila",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0020",
+    "canonical_name": "Don Julio 1942 Anejo Tequila",
+    "producer": "Don Julio",
+    "category": "Tequila",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0021",
+    "canonical_name": "Casa Dragones Joven Tequila",
+    "producer": "Casa Dragones",
+    "category": "Tequila",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0022",
+    "canonical_name": "Diplomatico Reserva Exclusiva Rum",
+    "producer": "Diplomatico",
+    "category": "Rum",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0023",
+    "canonical_name": "Ron Zacapa 23 Solera Gran Reserva Rum",
+    "producer": "Ron Zacapa",
+    "category": "Rum",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0024",
+    "canonical_name": "Hennessy Paradis Cognac",
+    "producer": "Hennessy",
+    "category": "Cognac",
+    "size_ml": 750,
+    "vintage_required": false
+  },
+  {
+    "product_id": "PROD-0025",
+    "canonical_name": "Remy Martin Louis XIII Cognac",
+    "producer": "Remy Martin",
+    "category": "Cognac",
+    "size_ml": 700,
+    "vintage_required": false
+  }
+]

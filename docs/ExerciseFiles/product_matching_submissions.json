@@ -1,0 +1,273 @@
+[
+  {
+    "submission_id": "SUB-2001",
+    "name": "The Macallan 18 Year Old Sherry Oak",
+    "producer": "The Macallan",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2002",
+    "name": "Lagavulin 16 Year Old",
+    "producer": "Lagavulin",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2003",
+    "name": "Buffalo Trace Bourbon",
+    "producer": "Buffalo Trace",
+    "category": "Bourbon",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2004",
+    "name": "Don Julio 1942",
+    "producer": "Don Julio",
+    "category": "Tequila",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2005",
+    "name": "Opus One",
+    "producer": "Opus One Winery",
+    "category": "Wine",
+    "vintage": 2018,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2006",
+    "name": "Eagle Rare 10 Year",
+    "producer": "Buffalo Trace",
+    "category": "Bourbon",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2007",
+    "name": "Macallan 18 Sherry Oak",
+    "producer": "Macallan",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2008",
+    "name": "Ch. Margaux 2005",
+    "producer": "Chateau Margaux",
+    "category": "Wine",
+    "vintage": 2005,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2009",
+    "name": "Ch Lafite 2010",
+    "producer": "Lafite Rothschild",
+    "category": "Wine",
+    "vintage": 2010,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2010",
+    "name": "Dom Romanee-Conti La Tache 2015",
+    "producer": "DRC",
+    "category": "Wine",
+    "vintage": 2015,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2011",
+    "name": "Yamazaki 12yr",
+    "producer": "Suntory",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 700
+  },
+  {
+    "submission_id": "SUB-2012",
+    "name": "Hibiki Harmony",
+    "producer": "Suntory Hibiki",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2013",
+    "name": "Clase Azul Repo",
+    "producer": "Clase Azul",
+    "category": "Tequila",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2014",
+    "name": "Pappy Van Winkle Fifteen",
+    "producer": "Van Winkle",
+    "category": "Bourbon",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2015",
+    "name": "Macallan 18",
+    "producer": "The Macallan",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 700
+  },
+  {
+    "submission_id": "SUB-2016",
+    "name": "Yamazaki 12",
+    "producer": "Suntory",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2017",
+    "name": "Lagavulin 16",
+    "producer": "Lagavulin",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 1000
+  },
+  {
+    "submission_id": "SUB-2018",
+    "name": "Pappy Van Winkle 20",
+    "producer": "Old Rip Van Winkle Distillery",
+    "category": "Bourbon",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2019",
+    "name": "Eagle Rare",
+    "producer": "Eagle Rare",
+    "category": "Bourbon",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2020",
+    "name": "Made Up Estate Reserve",
+    "producer": "Unknown Producer",
+    "category": "Wine",
+    "vintage": 2019,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2021",
+    "name": "Bourbon County Coffee Stout 2023",
+    "producer": "Goose Island",
+    "category": "Beer",
+    "vintage": 2023,
+    "size_ml": 500
+  },
+  {
+    "submission_id": "SUB-2022",
+    "name": "Glenmorangie 18",
+    "producer": "Glenmorangie",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2023",
+    "name": "Macallan 12 Double Cask",
+    "producer": "The Macallan",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2024",
+    "name": "Macallan 12 Double Cask",
+    "producer": "The Macallan",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2025",
+    "name": "Macallan 12yr Dbl Cask",
+    "producer": "Macallan",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2026",
+    "name": "Hennessy Paradis Cognac",
+    "producer": "Hennessy",
+    "category": "Cognac",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2027",
+    "name": "Hennessy Paradis",
+    "producer": "Hennessy",
+    "category": "Cognac",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2028",
+    "name": "Chateau Latour 2010",
+    "category": "Wine",
+    "vintage": 2010,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2029",
+    "name": "Chateau Lafite Rothschild",
+    "producer": "Chateau Lafite Rothschild",
+    "category": "Wine",
+    "vintage": "two thousand ten",
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2030",
+    "name": "Glenfiddich 18",
+    "producer": "Glenfiddich",
+    "category": "Whisky",
+    "vintage": null,
+    "size_ml": 800
+  },
+  {
+    "submission_id": "SUB-2031",
+    "name": "",
+    "producer": "Buffalo Trace",
+    "category": "Bourbon",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2032",
+    "name": "Chateau Margaux",
+    "producer": "Chateau Margaux",
+    "category": "Wine",
+    "vintage": null,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2033",
+    "name": "Chateau Margaux",
+    "producer": "Chateau Margaux",
+    "category": "Wine",
+    "vintage": 2010,
+    "size_ml": 750
+  },
+  {
+    "submission_id": "SUB-2034",
+    "name": "chateau-margaux",
+    "producer": "Chateau Margaux",
+    "category": "Wine",
+    "vintage": 2010,
+    "size_ml": 750
+  }
+]

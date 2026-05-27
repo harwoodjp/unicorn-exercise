@@ -1,0 +1,201 @@
+{
+  "description": "Hand labeled ground truth for the submissions in product_matching_submissions.json. Use this to measure your matcher. expected_product_id is the correct catalog product (or null for no_match). acceptable_decisions lists which decision classes are considered correct for that record; if your system emits a decision outside this set, count it as an error.",
+  "scoring_guidance": {
+    "primary_metric": "Per-record accuracy on (expected_product_id, decision in acceptable_decisions). Report both numbers.",
+    "weight_false_positives": "Treat a wrong product_id with decision=exact_match or possible_match as a worse error than a missed match (no_match or human_review when a true match existed). The catalog rules state false positives are worse than false negatives."
+  },
+  "labels": [
+    {
+      "submission_id": "SUB-2001",
+      "expected_product_id": "PROD-0001",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Clean exact match."
+    },
+    {
+      "submission_id": "SUB-2002",
+      "expected_product_id": "PROD-0003",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Clean exact match, 750ml variant."
+    },
+    {
+      "submission_id": "SUB-2003",
+      "expected_product_id": "PROD-0011",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Clean exact match."
+    },
+    {
+      "submission_id": "SUB-2004",
+      "expected_product_id": "PROD-0020",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Clean exact match."
+    },
+    {
+      "submission_id": "SUB-2005",
+      "expected_product_id": "PROD-0017",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Exact match, vintage 2018 carried on the bottle but catalog does not enumerate vintages."
+    },
+    {
+      "submission_id": "SUB-2006",
+      "expected_product_id": "PROD-0012",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Eagle Rare 10 by Buffalo Trace. Brand name in catalog producer field is Buffalo Trace; submission matches."
+    },
+    {
+      "submission_id": "SUB-2007",
+      "expected_product_id": "PROD-0001",
+      "acceptable_decisions": ["exact_match", "possible_match"],
+      "notes": "Producer alias 'Macallan' vs 'The Macallan'. Either tier is defensible; exact requires an alias table, possible requires LLM/fuzzy reasoning."
+    },
+    {
+      "submission_id": "SUB-2008",
+      "expected_product_id": "PROD-0014",
+      "acceptable_decisions": ["exact_match", "possible_match"],
+      "notes": "Abbreviation 'Ch.' to 'Chateau'. Vintage present satisfies vintage_required."
+    },
+    {
+      "submission_id": "SUB-2009",
+      "expected_product_id": "PROD-0016",
+      "acceptable_decisions": ["possible_match"],
+      "notes": "Abbreviation 'Ch' and shortened producer 'Lafite Rothschild' vs 'Chateau Lafite Rothschild'. Needs fuzzy/LLM reasoning."
+    },
+    {
+      "submission_id": "SUB-2010",
+      "expected_product_id": "PROD-0018",
+      "acceptable_decisions": ["possible_match"],
+      "notes": "'Dom' to 'Domaine' and producer initialism 'DRC'. Strong LLM judgment case."
+    },
+    {
+      "submission_id": "SUB-2011",
+      "expected_product_id": "PROD-0006",
+      "acceptable_decisions": ["exact_match", "possible_match"],
+      "notes": "Yamazaki 12 at 700ml matches catalog size. '12yr' to '12 Year'."
+    },
+    {
+      "submission_id": "SUB-2012",
+      "expected_product_id": "PROD-0007",
+      "acceptable_decisions": ["exact_match", "possible_match"],
+      "notes": "Producer 'Suntory Hibiki' vs catalog 'Suntory'. Compound brand+producer string."
+    },
+    {
+      "submission_id": "SUB-2013",
+      "expected_product_id": "PROD-0019",
+      "acceptable_decisions": ["possible_match"],
+      "notes": "Abbreviation 'Repo' to 'Reposado'."
+    },
+    {
+      "submission_id": "SUB-2014",
+      "expected_product_id": "PROD-0008",
+      "acceptable_decisions": ["possible_match", "human_review"],
+      "notes": "Producer mismatch 'Van Winkle' vs 'Old Rip Van Winkle' AND three sibling SKUs in the catalog (15/20/23). 'Fifteen' disambiguates to PROD-0008 but false positive risk is real."
+    },
+    {
+      "submission_id": "SUB-2015",
+      "expected_product_id": null,
+      "acceptable_decisions": ["no_match"],
+      "notes": "Size 700 vs catalog 750. size_ml_is_a_discriminator policy requires no_match."
+    },
+    {
+      "submission_id": "SUB-2016",
+      "expected_product_id": null,
+      "acceptable_decisions": ["no_match"],
+      "notes": "Size 750 vs catalog Yamazaki 12 at 700. size_ml policy applies."
+    },
+    {
+      "submission_id": "SUB-2017",
+      "expected_product_id": "PROD-0004",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Lagavulin 16 in 1000ml is a separate catalog entry. Tests that the matcher does not collapse on canonical_name alone."
+    },
+    {
+      "submission_id": "SUB-2018",
+      "expected_product_id": "PROD-0009",
+      "acceptable_decisions": ["exact_match", "possible_match"],
+      "notes": "Producer suffix 'Distillery'. Number '20' disambiguates within the Pappy line."
+    },
+    {
+      "submission_id": "SUB-2019",
+      "expected_product_id": "PROD-0012",
+      "acceptable_decisions": ["human_review", "possible_match"],
+      "notes": "Just 'Eagle Rare' without an age. Catalog only has the 10 Year, but Eagle Rare 17 and 25 exist in the real world and could later be added. Producer says 'Eagle Rare' not 'Buffalo Trace'. False positive risk is high; human_review is the safer call."
+    },
+    {
+      "submission_id": "SUB-2020",
+      "expected_product_id": null,
+      "acceptable_decisions": ["no_match"],
+      "notes": "Made up product."
+    },
+    {
+      "submission_id": "SUB-2021",
+      "expected_product_id": null,
+      "acceptable_decisions": ["no_match"],
+      "notes": "Category Beer is not in the catalog scope."
+    },
+    {
+      "submission_id": "SUB-2022",
+      "expected_product_id": null,
+      "acceptable_decisions": ["no_match"],
+      "notes": "Glenmorangie is a real producer but not in this catalog."
+    },
+    {
+      "submission_id": "SUB-2023",
+      "expected_product_id": "PROD-0002",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Clean exact match. Part of an exact-duplicate set with SUB-2024 and near-duplicate set with SUB-2025."
+    },
+    {
+      "submission_id": "SUB-2024",
+      "expected_product_id": "PROD-0002",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Exact duplicate of SUB-2023. Should be flagged as exact_duplicate AND matched."
+    },
+    {
+      "submission_id": "SUB-2025",
+      "expected_product_id": "PROD-0002",
+      "acceptable_decisions": ["exact_match", "possible_match"],
+      "notes": "Near duplicate of SUB-2023 ('12yr Dbl Cask'). Should match the same product and be flagged as a near duplicate."
+    },
+    {
+      "submission_id": "SUB-2026",
+      "expected_product_id": "PROD-0024",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Clean exact match. Near duplicate with SUB-2027."
+    },
+    {
+      "submission_id": "SUB-2027",
+      "expected_product_id": "PROD-0024",
+      "acceptable_decisions": ["exact_match"],
+      "notes": "Near duplicate of SUB-2026 (drops 'Cognac' suffix). Same product."
+    },
+    {
+      "submission_id": "SUB-2028",
+      "expected_product_id": null,
+      "acceptable_decisions": ["invalid"],
+      "notes": "Missing producer field. Should fail validation before reaching the matcher. Counts as invalid, not no_match."
+    },
+    {
+      "submission_id": "SUB-2029",
+      "expected_product_id": null,
+      "acceptable_decisions": ["invalid"],
+      "notes": "Vintage is a string, not an integer. Should fail validation."
+    },
+    {
+      "submission_id": "SUB-2030",
+      "expected_product_id": null,
+      "acceptable_decisions": ["invalid"],
+      "notes": "size_ml=800 is not in the allowed list. Should fail validation."
+    },
+    {
+      "submission_id": "SUB-2031",
+      "expected_product_id": null,
+      "acceptable_decisions": ["invalid"],
+      "notes": "Empty name. Should fail validation."
+    },
+    {
+      "submission_id": "SUB-2032",
+      "expected_product_id": "PROD-0014",
+      "acceptable_decisions": ["human_review"],
+      "notes": "vintage_required=true on Margaux but submission has null vintage. Product line is identified but cannot exact_match per the vintage_when_required policy."
+    }
+  ]
+}

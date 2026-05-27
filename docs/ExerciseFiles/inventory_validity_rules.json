@@ -1,0 +1,29 @@
+{
+  "required_fields": [
+    "submission_id",
+    "name",
+    "producer",
+    "category",
+    "size_ml"
+  ],
+  "optional_fields": [
+    "vintage"
+  ],
+  "field_rules": {
+    "submission_id": "Non empty string. Must be unique within a submission file.",
+    "name": "Non empty string after trimming whitespace.",
+    "producer": "Non empty string.",
+    "category": "Non empty string. Suggested values: Wine, Whisky, Bourbon, Tequila, Rum, Cognac. Other values pass validation but will not match the catalog.",
+    "vintage": "Integer between 1800 and the current year, or null. Non integer strings are invalid.",
+    "size_ml": "Integer. Allowed values: 50, 100, 200, 375, 500, 700, 750, 1000, 1500, 3000, 6000."
+  },
+  "expected_outputs": [
+    "valid_records",
+    "invalid_records",
+    "exact_duplicate_records",
+    "near_duplicate_records",
+    "unmatched_records",
+    "summary_report"
+  ],
+  "notes": "Validation runs before matching. A record that fails validation must not be matched against the catalog. Each invalid record should be reported with the failing field and reason so the partner can correct and resubmit."
+}
